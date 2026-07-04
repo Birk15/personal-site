@@ -1,0 +1,191 @@
+/* ===========================
+   Seite
+=========================== */
+
+.webseite {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  padding: 5rem 8%;
+
+  color: white;
+}
+
+.webseite h1 {
+  margin-bottom: 1rem;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.webseite .subtitle {
+  max-width: 750px;
+  margin: 0 auto 4rem;
+
+  text-align: center;
+
+  font-size: 1.2rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===========================
+   Karten
+=========================== */
+
+.webseite .cards {
+  display: flex;
+  gap: 3rem;
+
+  justify-content: center;
+  align-items: stretch;
+
+  flex-wrap: wrap;
+}
+
+.webseite .card {
+  flex: 1;
+  min-width: 340px;
+
+  padding: 2.5rem;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.webseite .card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.3);
+}
+
+/* ===========================
+   Überschrift
+=========================== */
+
+.webseite .card h2 {
+  margin-bottom: 2rem;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+
+  color: white;
+}
+
+/* ===========================
+   Liste
+=========================== */
+
+.webseite .card ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.webseite .card li {
+  position: relative;
+
+  margin-bottom: 1.3rem;
+
+  padding-left: 2rem;
+
+  font-size: 1.1rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Blaue Häkchen */
+
+.webseite .card li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #7fd2ff;
+
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.webseite .card strong {
+  color: white;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1000px) {
+  .webseite .cards {
+    flex-direction: column;
+  }
+
+  .webseite h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .webseite {
+    padding: 4rem 1rem;
+  }
+
+  .webseite h1 {
+    font-size: 2.2rem;
+  }
+
+  .webseite .card {
+    padding: 2rem 1.6rem;
+  }
+
+  .webseite .cards {
+    margin: 0;
+  }
+
+  .webseite .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .webseite .card li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .webseite h1 {
+    font-size: 1.6rem;
+  }
+
+  .webseite .card {
+    width: 280px;
+    min-width: 240px;
+    padding: 2rem 1rem;
+  }
+
+  .webseite .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .webseite .card li {
+    font-size: 0.925rem;
+  }
+}

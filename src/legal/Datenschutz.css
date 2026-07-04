@@ -1,0 +1,22 @@
+.datenschutz {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: white;
+}
+
+.datenschutz h2 {
+  margin-top: 1rem;
+}
+
+.datenschutz h3 {
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .datenschutz {
+    font-size: 0.8rem;
+    margin: 1rem;
+  }
+}

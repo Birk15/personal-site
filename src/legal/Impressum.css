@@ -1,0 +1,15 @@
+.impressum {
+  margin: 5rem;
+  color: white;
+}
+
+.impressum h2 {
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .impressum {
+    margin: 1rem;
+    font-size: 0.8rem;
+  }
+}

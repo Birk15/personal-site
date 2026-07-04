@@ -1,0 +1,219 @@
+.technikhilfe {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.technikhilfe h1 {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.technikhilfe .subtitle {
+  max-width: 850px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0rem 1rem 3rem 1rem;
+}
+
+.technikhilfe .technik-cards {
+  max-width: 80vw;
+  justify-content: center;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.technikhilfe .technik-card {
+  padding: 2.5rem;
+
+  width: 25rem;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s;
+}
+
+.technikhilfe .technik-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35);
+}
+
+.technikhilfe .technik-card h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.technikhilfe .technik-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.technikhilfe .technik-card h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.technikhilfe .technik-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.technikhilfe .technik-card li {
+  position: relative;
+
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+
+  line-height: 1.7;
+  font-size: 1.08rem;
+}
+
+.technikhilfe .technik-card li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+
+  color: #82d6ff;
+  font-weight: bold;
+}
+
+.technikhilfe .technik-card .kontakt-button {
+  display: inline-block;
+
+  margin-top: 2rem;
+  padding: 14px 30px;
+
+  border-radius: 40px;
+
+  background: linear-gradient(135deg, #49a7e8, #82d7ff);
+
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.technik-hilfe .kontakt-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(76, 168, 232, 0.4);
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 1200px) {
+  .technikhilfe h1 {
+    font-size: clamp(2.3rem, 6vw, 3.2rem);
+  }
+
+  .technikhilfe .technik-cards {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .technikhilfe .technik-card {
+    min-width: 80%;
+    padding: 2rem;
+  }
+
+  .technikhilfe .technik-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .technikhilfe .technik-card li {
+    font-size: 1.05rem;
+  }
+}
+
+/* ===========================
+   Smartphones
+=========================== */
+
+@media (max-width: 600px) {
+  .technikhilfe h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .technikhilfe .subtitle {
+    font-size: 1rem;
+  }
+
+  .technikhilfe .technik-cards {
+    gap: 1.5rem;
+  }
+
+  .technikhilfe .technik-card {
+    width: 70vw;
+    padding: 1.5rem;
+  }
+
+  .technikhilfe .technik-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .technikhilfe .technik-card li {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-left: 1.8rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .technikhilfe .technik-card .kontakt-button {
+    display: block;
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 16px;
+  }
+}
+
+/* ===========================
+   Kleine Smartphones
+=========================== */
+
+@media (max-width: 480px) {
+  .technikhilfe h1 {
+    font-size: 1.5rem;
+  }
+
+  .technikhilfe .subtitle {
+    font-size: 0.925rem;
+  }
+
+  .technikhilfe .technik-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .technikhilfe .technik-card li {
+    font-size: 0.875rem;
+    padding-left: 1.6rem;
+  }
+
+  .technikhilfe .technik-card .kontakt-button {
+    border-radius: 12px;
+    font-size: 0.975rem;
+    text-align: center;
+    padding: 12px 16px;
+  }
+}

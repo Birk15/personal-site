@@ -1,0 +1,215 @@
+.kontakt-page {
+  max-width: 1300px;
+  margin: auto;
+
+  padding: 5rem 8%;
+
+  color: white;
+}
+
+.kontakt-page h1 {
+  text-align: center;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+
+  text-align: center;
+
+  font-size: 1.2rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ======================
+   Container
+====================== */
+
+.kontakt-container {
+  display: flex;
+  gap: 3rem;
+
+  align-items: stretch;
+
+  flex-wrap: wrap;
+}
+
+/* ======================
+   Karten
+====================== */
+
+.kontakt-info,
+.kontakt-form {
+  flex: 1;
+  min-width: 340px;
+
+  padding: 2.5rem;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+}
+
+.kontakt-info h2,
+.kontakt-form h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  font-size: 2rem;
+
+  color: white;
+}
+
+.kontakt-info p {
+  margin-bottom: 1.6rem;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ======================
+   Formular
+====================== */
+
+.kontakt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.kontakt-form input,
+.kontakt-form textarea {
+  padding: 16px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  font-size: 1rem;
+  font-family: inherit;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.kontakt-form input::placeholder,
+.kontakt-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.kontakt-form input:focus,
+.kontakt-form textarea:focus {
+  border-color: #74cfff;
+
+  box-shadow: 0 0 12px rgba(116, 207, 255, 0.35);
+}
+
+/* ======================
+   Datenschutz Checkbox
+====================== */
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-top: 0.5rem;
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.checkbox-container input {
+  margin-top: 4px;
+  transform: scale(1.2);
+}
+
+.checkbox-container a {
+  color: #82d7ff;
+  text-decoration: none;
+}
+
+.checkbox-container a:hover {
+  text-decoration: underline;
+}
+
+/* ======================
+   Button
+====================== */
+
+.kontakt-form button {
+  margin-top: 0.5rem;
+  padding: 16px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #4ba7e7, #82d7ff);
+
+  color: white;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.kontakt-form button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(74, 167, 231, 0.45);
+}
+
+/* ======================
+   Responsive
+====================== */
+
+@media (max-width: 1000px) {
+  .kontakt-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .kontakt-page {
+    padding: 4rem 1rem;
+  }
+
+  .kontakt-container {
+    align-items: center;
+  }
+
+  .kontakt-form,
+  .kontakt-info {
+    padding: 2rem 1rem;
+    width: 84vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .kontakt-info,
+  .kontakt-form {
+    width: 80vw;
+    min-width: 70vw;
+  }
+}

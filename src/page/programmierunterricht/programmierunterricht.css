@@ -1,0 +1,165 @@
+.programmierunterricht {
+  max-width: 1300px;
+  margin: auto;
+  padding: 5rem 8%;
+  color: white;
+}
+
+.programmierunterricht h1 {
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.programmierunterricht .subtitle {
+  max-width: 850px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.programmierunterricht .cards {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.programmierunterricht .card {
+  flex: 1;
+  min-width: 320px;
+
+  padding: 2.5rem;
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 22px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.22);
+
+  transition: 0.3s ease;
+}
+
+.programmierunterricht .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.35);
+}
+
+.programmierunterricht .card h2 {
+  margin-bottom: 2rem;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 2rem;
+
+  color: white;
+}
+
+.programmierunterricht .card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programmierunterricht .card li {
+  position: relative;
+
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.programmierunterricht .card li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+
+  color: #7fd7ff;
+  font-weight: bold;
+}
+
+.programmierunterricht .kontakt-button {
+  display: inline-block;
+
+  margin-top: 2rem;
+  padding: 14px 30px;
+
+  border-radius: 40px;
+
+  background: linear-gradient(135deg, #49a7e8, #82d7ff);
+
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.programmierunterricht .kontakt-button:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 28px rgba(73, 167, 232, 0.45);
+}
+
+@media (max-width: 1000px) {
+  .programmierunterricht .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .programmmierunterricht h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .programmierunterricht {
+    padding: 4rem 1rem;
+  }
+
+  .programmierunterricht h1 {
+    font-size: 2.2rem;
+  }
+
+  .programmierunterricht .card {
+    padding: 2rem 1.6rem;
+  }
+
+  .programmierunterricht .cards {
+    margin: 0;
+  }
+
+  .programmierunterricht .card h2 {
+    font-size: 1.6rem;
+  }
+
+  .programmierunterricht .card li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .programmierunterricht h1 {
+    font-size: 1.6rem;
+  }
+
+  .programmierunterricht .card {
+    width: 80vw;
+    min-width: 240px;
+    padding: 2rem 1rem;
+  }
+
+  .programmierunterricht .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .programmierunterricht .card li {
+    font-size: 0.925rem;
+  }
+}
